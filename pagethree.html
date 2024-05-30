@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay for Strays</title>
+</head>
+<body class="pagethree">
+
+    <audio autoplay>
+        <source src="media/music3.mp3"> <!--audio of the page-->
+    </audio>
+    
+    <div class="profile-website">
+        <header class="pagethreeheader">
+            <nav>
+                <span class="pagetitle">A Stay for Strays</span>
+                <span class="links">
+                    <a href="pageone.html">Home</a>
+                    <a href="pagetwo.html">Log Out</a>
+                </span>
+            </nav>
+        </header>
+        <section>
+            <div class="profilepage">
+                <div class="cover-picture">
+                    <img src="media/cover.png" id="coverpic">
+                </div>
+                <div class="profile-picture">
+                    <img src="media/profilepicture.png" id="profilepic">
+                </div>
+                <div class="profile-content">
+                    <span id="firstname" class="client-name"></span>
+                    <span id="lastname" class="client-name"></span> 
+                    <p class="usernameoutput">@<span id="username"></span></p>
+                    <p class="bio">“The love of a dog is a pure thing."</span></p>
+                    <div class="change-profile">
+                        <span class="userprofile">
+                            <label for="input-file" class="changeimage">Update Profile</label>
+                            <input type="file" class="imagefile" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                        </span>
+                        <span class="usercover">
+                            <label for="input-file2" class="changeimage">Update Cover</label>
+                            <input type="file" class="imagefile" accept="image/jpeg, image/png, image/jpg" id="input-file2">
+                        </span>
+                    </div>
+                </div>
+                <div class="more-information">
+                    <span class="information-title">
+                        <h3>Personal Information:</h3>
+                    </span>
+                    <div class="personal-information">
+                        <p><strong>Email:</strong> <span id="email"></span></p>
+                        <p><strong>Password:</strong> <span id="password"></span></p>
+                        <p><strong>Contact Number:</strong> <span id="contactnumber"></span></p>
+                        <p><strong>Gender:</strong> <span id="gender"></span></p>
+                        <p><strong>Why do you support the campaign?</strong><br><span id="wdystc"></span></p>
+                    </div>
+                    <div class="playlist">
+                        <span class="playlist-title">
+                            <h3>Stay for Strays Reccomended Playlist:</h3>
+                        </span>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Cinr056vN1JUmpywoFWNg?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div class="welcome">
+                        <p class="welcome-message">You have successfully signed up to volunteer for the campaign. 
+                            We, the "A Stay for Stray" organization, are very happy to have you as part of our community. 
+                            For future activities, please wait for our notice for the upcoming schedules. For more questions, please contact us at stayforstrays@gmail.com. Daghang Salamat!</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+            document.getElementById('firstname').innerText = localStorage.getItem('firstname');
+            document.getElementById('lastname').innerText = localStorage.getItem('lastname');
+            document.getElementById('email').innerText = localStorage.getItem('email');
+            document.getElementById('username').innerText = localStorage.getItem('username');
+            document.getElementById('password').innerText = localStorage.getItem('password');
+            document.getElementById('contactnumber').innerText = localStorage.getItem('contactnumber');
+            document.getElementById('wdystc').innerText = localStorage.getItem('wdystc');
+            document.getElementById('gender').innerText = localStorage.getItem('gender');
+
+            var profilePicture = document.getElementById("profilepic");
+            var coverPicture =  document.getElementById("coverpic");
+            var inputProfile = document.getElementById("input-file");
+            var inputProfile2 = document.getElementById("input-file2");
+
+            inputProfile.onchange = function(){
+                profilePicture.src = URL.createObjectURL(inputProfile.files[0]);
+            }
+            inputProfile2.onchange = function(){
+                coverPicture.src = URL.createObjectURL(inputProfile2.files[0]);
+            }
+            </script>
+        </section>
+    </div>
+</body>
+<link rel="stylesheet" href="style.css">
+</html>

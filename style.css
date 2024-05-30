@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{ /** styling its main body **/
+    display: flex;
+    flex-direction: column;
+}
+nav{  /** styling its navigation/header part **/
+    display: flex;
+    background: linear-gradient(90deg, rgba(222,228,228,1) 0%, rgba(162,211,233,1) 100%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom:1vw;
+    border-radius: 3px;
+}
+/** additional styling in its navigation part **/
+.pageoneheader{ 
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+/*Page title styling*/
+.pagetitle{
+    font-weight: 700;
+    color: rgb(117, 165, 186);
+    text-shadow: 1px 1px rgb(223, 248, 255);
+    font-style: normal;
+    font-size: x-large;
+}
+ 
+/*Links styling and hover effect*/
+.links a:hover{
+    transition: 0.2;
+    color: rgb(255, 255, 255);
+}
+.links a{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #007194;
+    margin-left: 1vw;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.2s;
+}
+.banner{
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4vw;
+    text-align: center;
+}
+.banner p{
+    color: white;
+    text-align: center;
+}
+
+.bannerhead{
+    font-size: 40px;
+    
+}
+.bannerhead h1{
+    color: #a8d7e6;
+    text-shadow: 1px 1px#000000;
+    
+}
+.part2{
+    margin-top: 12vw;
+    background-color: #a5d5f6c2;
+    padding: 4vw;
+
+    /** about page parameters **/
+}
+.aboutinfo{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.top h1{
+    text-align: left;
+    color: #3a6a8f;
+    text-shadow: 1px 1px white;
+    margin-bottom: 5px;
+    margin-left: 12%;
+}
+.top p{
+    color: #ffffff;
+    font-size: medium;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    padding-top: 1%;
+}
+.info{
+    flex: 1;
+    padding-right: 20px;
+}
+.picinfo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picinfo img{
+    margin-top: 65px;
+    width: 500px;
+    border-style: outset;
+    border-width: 8px;
+    border-color: #88b8cf;
+}
+.middle{
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.middle h1{
+    margin-bottom: 20px;
+    color: #3a6a8f;
+    text-shadow: 1px 1px white;
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 20px;
+    
+}
+.pics img{
+    width: 380px;
+    height: auto;
+    margin: 0 10px;
+    border-style: outset;
+    border-width: 8px;
+    border-color: #88b8cf;
+    transition: 0.3s;
+}
+.pics img:hover{
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+.pic1{
+    width: 80%;
+ }
+.pic2{
+    width: 80%;
+}
+.pic3{
+    width: 180%;
+}
+.middleinfo{
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+}
+.middleinfo article{
+    color: white;
+}
+.aboutinfo .info p{
+    text-align: right;
+}
+.aboutinfo .info h2{
+    text-align: right;
+    color: #3a6a8f;
+}
+.aboutinfo .info p strong{
+    color: #ffffff;
+}
+.bottom{
+    text-align: right;
+}
+.aboutinfo .picinfo2 #piclink{
+    width: 550px;
+    height: auto;
+    margin: 0 10px;
+    border-style: outset;
+    border-width: 8px;
+    border-color: #88b8cf;
+    transition: 0.3s;
+}
+.aboutinfo .picinfo2 #piclink:hover{
+    transition: 0.3s;
+    opacity: 0.80;
+    transform: scale(1.08);
+    border-color: white;
+}
+.bottom h1{
+    margin-bottom: 5px;
+    margin-top: 3%;
+    margin-right: 12%;
+    text-align: right;
+    color: #3a6a8f;
+    text-shadow: 1px 1px white;
+}
+.bottom{
+    margin-bottom: 60px;
+}
+.bottom p{
+    color: #e2ecec;
+    font-size: medium;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    padding-top: 1%;
+}
+.bottom h2{
+    text-align: right;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+     color: rgb(54, 54, 54);
+}
+.pagetwo{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#bgvid { /*styling for the background video of page 1 & 2*/
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+/*Border styling*/
+.container{
+    padding: 20px;
+    background-color: rgba(244, 253, 255, 0.806);
+    border-radius: 5px;
+    max-width: 800px;
+    width: 100%;
+    
+     /*form padding*/
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+}
+.container .form-details{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-box{
+    width: calc(100% / 2 - 20px);
+    margin: 10px;
+}
+.input-box .details{
+    display: block;
+    margin-bottom: 3px;
+}
+/*Styling for sign-up*/
+.form-details .input-box input {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 17px; ;
+    border: 1px solid rgb(71, 105, 137) ;
+    background-color: rgb(234, 234, 234);
+    border-radius: 4px;
+}
+.more textarea{
+    width: 739px;
+    height: 15vh;
+    background-color: rgb(234, 234, 234);
+    border: 1px solid rgb(71, 105, 137) ;
+}
+
+/*Styling for gender selection*/
+.gender-buttons .gender-title{
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    margin-bottom: 3px;
+}
+.gender-buttons .category{
+    margin-top: 0.5em;
+    color: black;
+    width: 100%;
+    display: flex;
+}
+.category .male, .female, .unknown{
+    padding: 15px;
+    margin: 3px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 5px;
+}
+.gender-buttons .category label{
+    padding: 0 20px 0 5px;
+    font-size: 15px;
+}
+.gender-buttons .category label, .gender-buttons .category input{
+    cursor: pointer;
+}
+
+/*Styling for note section*/
+.note{
+    margin-top: 5px;
+}
+.note p{
+    font-size: small;
+    font-style: italic;
+    color: rgb(112, 112, 112);
+    display: flex;
+    justify-content: center;
+}
+.button{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+#submit{   
+    color: rgb(0, 42, 101);
+    padding: 7px;
+    width: 70vh;
+    margin: 3px;
+    border: 1px solid rgb(179, 222, 255) ;
+    background: rgb(222,228,228);
+    background: linear-gradient(90deg, rgba(222,228,228,1) 0%, rgba(162,211,233,1) 100%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ .pagethree{
+    background: url(media/bgimgfinal.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ /*Styling for profile page*/
+ .profilepage{
+    width: 1000px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(222,228,228,1) 0%, rgba(162,211,233,1) 100%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+    border: 3px solid white;
+    border-radius: 10px;
+    flex-direction: column;
+ }
+ .cover-picture img{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+ }
+ .profile-picture img{
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin-top: -150px;
+    margin-left: 30px;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid white;
+ }
+ .profile-content{
+    margin-top: -90px;
+    margin-left: 295px;
+ }
+ .profile-content .client-name{
+    font-size: x-large;
+    font-weight: 600;
+ }
+ .profile-content .usernameoutput{
+    font-size: medium;
+    color: rgb(75, 75, 75);
+ }
+ .profile-content .bio{
+    font-style: italic;
+    padding: 5px;
+    font-size: small;
+ 
+    /*Interactable image*/
+
+}
+ .change-profile{
+    margin-left: 300px;
+    margin-top: -99px;
+}
+.changeimage{
+    text-align: center;
+    display: block;
+    width: 200px;
+    background: linear-gradient(90deg, rgba(222,228,228,1) 0%, rgb(187, 217, 230) 100%, rgba(255,255,255,1) 100%, rgb(120, 217, 237) 100%);
+    padding: 12px;
+    margin: 10px auto;
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: 0.5s;
+ }
+.changeimage:hover{
+    transition: 0.5s;
+    background: linear-gradient(90deg, rgba(222,228,228,1) 0%, rgb(209, 241, 255) 100%, rgba(255,255,255,1) 100%, rgb(174, 242, 255) 100%);
+    transform: scale(1.10);
+}
+
+ .imagefile{
+    display: none;
+ }
+ .more-information{
+    width:500px;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .information-title h3{
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+ }
+ .personal-information{
+    padding: 15px;
+    width:500px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid rgb(71, 105, 137) ;
+    flex-direction: column;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .playlist{
+    width:500px;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-direction: column;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .playlist-title h3{
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+ }
+ .welcome{
+    padding: 15px;
+    width:500px;
+    overflow: hidden;
+    flex-direction: column;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+ }
+ .welcome-message{
+    font-size: small;
+ }
+ footer{ /*styling for the footer*/
+    width: 100vw;
+    position: fixed;
+    bottom: 0vw;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(222,228,228,1) 0%, rgba(162,211,233,1) 100%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+    justify-content: space-around;
+    padding: 15px;
+}
+footer p{ /*styling for the copyright text in the footer section*/
+    color: #007194;
+}
